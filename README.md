@@ -1,28 +1,60 @@
-# 📚 BookStore – Dự án Thương mại điện tử
+📚 BOOKSTORE – DỰ ÁN THƯƠNG MẠI ĐIỆN TỬ
 
-## 🧭 Giới thiệu
+Giới thiệu
+BookStore là một website thương mại điện tử được phát triển bằng HTML, CSS và JavaScript thuần.
+Trang web cho phép người dùng duyệt và tìm kiếm các đầu sách yêu thích, thêm sản phẩm vào giỏ hàng, thanh toán qua mã QR động, đăng nhập - đăng ký tài khoản, gửi phản hồi và liên hệ trực tiếp với cửa hàng.
 
-**BookStore** là website thương mại điện tử được phát triển bằng **HTML, CSS và JavaScript thuần**, cho phép người dùng:
+Tính năng chính
 
-- Duyệt và tìm kiếm các đầu sách yêu thích 📖  
-- Thêm sản phẩm vào giỏ hàng và **thanh toán qua mã QR động** 💳  
-- Đăng ký / đăng nhập tài khoản cá nhân 🔐  
-- Đánh giá và bình luận sản phẩm ⭐  
-- Gửi phản hồi, liên hệ trực tiếp với cửa hàng 📬  
-- Xem thông tin **tuyển dụng**, **chính sách**, **hướng dẫn mua hàng** và **hỗ trợ khách hàng** 👥  
+Duyệt và tìm kiếm sách theo thể loại hoặc tên tác giả
 
----
+Thêm sản phẩm vào giỏ hàng và hiển thị tổng tiền tự động
 
+Thanh toán qua mã QR động, hiển thị đúng số tiền phải trả
 
-## ⚙️ Cấu trúc thư mục
+Đăng ký và đăng nhập tài khoản cá nhân
+
+Gửi phản hồi, liên hệ hoặc ứng tuyển trực tiếp trên web
+
+Hiển thị thông tin tuyển dụng, chính sách, hướng dẫn mua hàng và hỗ trợ khách hàng
+
+Các trang chính trong website
+
+index.html – Trang chào mừng, giới thiệu
+
+home.html – Trang chủ
+
+products.html – Danh sách và tìm kiếm sách
+
+cart.html – Giỏ hàng và thanh toán QR
+
+login.html / register.html – Đăng nhập và đăng ký
+
+about.html – Giới thiệu về BookStore
+
+careers.html – Trang tuyển dụng và form ứng tuyển
+
+policy.html – Chính sách bảo mật
+
+return.html – Chính sách đổi trả
+
+guide.html – Hướng dẫn mua hàng
+
+support.html – Gửi yêu cầu hỗ trợ
+
+contact.html – Trang liên hệ
+
+feedback.html – Gửi phản hồi khách hàng
+
+Cấu trúc thư mục
 
 DuAnTMDT/
 │
 ├── js/
-│ ├── api.js # Xử lý dữ liệu & danh sách sản phẩm
-│ ├── app.js # Logic tổng thể trang web
-│ ├── auth.js # Quản lý đăng nhập / đăng ký
-│ └── cart.js # Giỏ hàng và thanh toán QR
+│ ├── api.js – Xử lý dữ liệu và danh sách sản phẩm
+│ ├── app.js – Điều khiển logic chính của website
+│ ├── auth.js – Quản lý đăng nhập, đăng ký
+│ └── cart.js – Xử lý giỏ hàng và mã QR thanh toán
 │
 ├── pages/
 │ ├── about.html
@@ -47,62 +79,68 @@ DuAnTMDT/
 ├── index.html
 └── README.md
 
-yaml
-Copy code
+Cách chạy dự án
+Cách 1: Mở trực tiếp
 
----
+Tải dự án về máy
 
-## 🚀 Cách chạy dự án
+Mở file index.html bằng trình duyệt bất kỳ (Chrome, Edge, Firefox, …)
 
-### 🔹 Cách 1: Mở trực tiếp
-Tải dự án về và mở file `index.html` bằng trình duyệt (Chrome, Edge, Firefox,…).
+Cách 2: Dùng Live Server trong Visual Studio Code
 
-### 🔹 Cách 2: Dùng Live Server (Visual Studio Code)
-1. Cài extension **Live Server**.  
-2. Mở thư mục `DuAnTMDT` trong VS Code.  
-3. Chuột phải vào `index.html` → chọn **“Open with Live Server”**.  
-4. Truy cập trình duyệt tại địa chỉ hiển thị (thường là `http://127.0.0.1:5500/`).
+Cài extension “Live Server”
 
----
+Mở thư mục DuAnTMDT bằng VS Code
 
-## 💡 Tính năng nổi bật
+Chuột phải vào file index.html → chọn “Open with Live Server”
 
-✅ Giao diện hiện đại, tối ưu cho **desktop và mobile**  
-✅ **QR động** hiển thị đúng số tiền cần thanh toán  
-✅ Lưu dữ liệu người dùng và giỏ hàng bằng **LocalStorage**  
-✅ Form **liên hệ / phản hồi / ứng tuyển** có thông báo cảm ơn (toast popup)  
-✅ **Header & Footer** đồng nhất giữa tất cả các trang  
-✅ Hiển thị **thông báo đăng nhập, đăng ký, và thanh toán** mượt mà  
+Trình duyệt sẽ tự mở địa chỉ (thường là http://127.0.0.1:5500
+)
 
----
+Công nghệ sử dụng
 
-## 🧠 Công nghệ sử dụng
+HTML5, CSS3, JavaScript thuần
 
-- **HTML5 / CSS3 / JavaScript (Vanilla JS)**  
-- **Flexbox & CSS Grid Layout**  
-- **LocalStorage API**  
-- **Dynamic QR Generator API**  
-- **Responsive Design (main.css & responsive.css)**  
+Flexbox và CSS Grid Layout
 
----
- 
-📍 Việt Nam  
-📧 Email: `cskh@bookstore.com`  
-🌐 GitHub: [Khiem-0806](https://github.com/Khiem-0806)  
-📞 Hotline: 1900 1234 
+LocalStorage API để lưu dữ liệu người dùng
 
----
+QR Generator API để tạo mã thanh toán
 
-## 📄 Giấy phép
+Responsive design cho cả desktop và mobile
 
-Dự án được xây dựng với mục đích **học tập và thực hành kỹ năng lập trình web**.  
-Mọi người có thể sao chép, chia sẻ hoặc chỉnh sửa **cho mục đích phi thương mại**.
+Tính năng nổi bật
 
----
+Giao diện hiện đại, dễ sử dụng
 
-## 🚧 Định hướng phát triển trong tương lai
+Mã QR thanh toán tự động theo tổng tiền
 
-- Tích hợp **CSDL thực tế** (MySQL hoặc Firebase)  
-- Kết nối với **API thanh toán thực tế (Momo, VNPay, v.v.)**  
-- Thêm **trang quản trị (Admin Dashboard)** để quản lý sách & đơn hàng  
-- Gửi **email tự động** khi người dùng đăng ký hoặc mua hàng  
+Lưu giỏ hàng cục bộ (không cần đăng nhập)
+
+Form liên hệ, phản hồi, ứng tuyển có thông báo popup
+
+Header và Footer đồng nhất giữa các trang
+
+Hiển thị thông báo đăng nhập, đăng ký, thanh toán mượt mà
+
+
+Email: cskh@bookstore.com
+
+GitHub: https://github.com/Khiem-0806
+
+Hotline: 1900 1234
+Địa chỉ: Việt Nam
+
+Giấy phép
+Dự án được xây dựng phục vụ học tập và thực hành lập trình web.
+Cho phép chia sẻ và chỉnh sửa với mục đích phi thương mại.
+
+Định hướng phát triển
+
+Kết nối cơ sở dữ liệu thực tế (MySQL hoặc Firebase)
+
+Tích hợp API thanh toán thật (MoMo, VNPay, ZaloPay)
+
+Xây dựng trang quản trị Admin Dashboard
+
+Gửi email tự động khi người dùng đăng ký hoặc mua hàng
