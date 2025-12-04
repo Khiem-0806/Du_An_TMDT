@@ -63,9 +63,6 @@ DuAnTMDT/
 ├── index.html # Trang khởi đầu của website
 └── README.md # Thông tin mô tả dự án
 
-yaml
-Copy code
-
 ---
 
 ## 🚀 4. Cách chạy dự án
