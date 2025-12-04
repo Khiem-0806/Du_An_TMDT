@@ -117,10 +117,6 @@ README.md: Tệp mô tả chi tiết dự án (thông tin, hướng dẫn, cấu
 - 📬 Form liên hệ, phản hồi và ứng tuyển.  
 - 🧾 Các trang thông tin: giới thiệu, chính sách, đổi trả, hướng dẫn.
 
----
- 
-- **Địa điểm:** TP. Hồ Chí Minh, Việt Nam  
-- **GitHub:** [https://github.com/Khiem-0806](https://github.com/Khiem-0806)
 
 ---
 
