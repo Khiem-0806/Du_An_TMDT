@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chính sách bảo mật | BookStore</title>
+  <link rel="stylesheet" href="../styles/variables.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/responsive.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">📚 <span>BookStore</span></a>
+      <nav class="nav">
+        <a href="./home.html">Trang chủ</a>
+        <a href="./products.html">Sản phẩm</a>
+        <a href="./cart.html">Giỏ hàng</a>
+      </nav>
+      <div class="auth-actions" id="authActions"></div>
+    </div>
+  </header>
+
+  <div class="top-banner">🔒 Bảo mật thông tin khách hàng là ưu tiên hàng đầu của chúng tôi</div>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="page-title" style="color:#007bff;">Chính sách bảo mật</h1>
+
+      <h3>1. Thu thập thông tin</h3>
+      <p>Chúng tôi chỉ thu thập thông tin cần thiết để phục vụ việc mua hàng và hỗ trợ khách hàng.</p>
+
+      <h3>2. Sử dụng thông tin</h3>
+      <p>Thông tin của bạn được sử dụng để xử lý đơn hàng, giao hàng và chăm sóc khách hàng.</p>
+
+      <h3>3. Bảo mật thông tin</h3>
+      <p>BookStore cam kết bảo mật thông tin cá nhân của khách hàng bằng các biện pháp bảo mật tiên tiến.</p>
+    </div>
+  </section>
+
+  <footer style="background:#f8f9fa; padding:40px 8%; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px; border-top:2px solid #e0e0e0; font-size:0.95rem;">
+    <div>
+      <h4>VỀ BOOKSTORE</h4>
+      <p><a href="about.html">Giới thiệu</a></p>
+      <p><a href="careers.html">Tuyển dụng</a></p>
+      <p><a href="policy.html">Chính sách bảo mật</a></p>
+    </div>
+    <div>
+      <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+      <p><a href="guide.html">Hướng dẫn mua hàng</a></p>
+      <p><a href="return.html">Chính sách đổi trả</a></p>
+    </div>
+    <div>
+      <h4>LIÊN HỆ & HỖ TRỢ</h4>
+      <p><a href="contact.html">Liên hệ</a></p>
+      <p><a href="feedback.html">Gửi yêu cầu hỗ trợ</a></p>
+    </div>
+    <div>
+      <h4>THÔNG TIN LIÊN HỆ</h4>
+      <p>📍 123 Đường Sách, TP.HCM</p>
+      <p>📧 cskh@bookstore.com</p>
+      <p>📞 1900 1234</p>
+      <p>🕐 8:00 - 22:00 (T2 - CN)</p>
+    </div>
+  </footer>
+
+  <script src="../js/auth.js"></script>
+  <script src="../js/app.js"></script>
+  <script>Auth.requireAuth(); App.mountHeader();</script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ | BookStore</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/responsive.css">
+  <style>
+    /* ==== THANH NAVBAR ==== */
+    header {
+      background-color: #0066ff;
+      color: white;
+      padding: 10px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo span {
+      color: #ffe082;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffe082;
+    }
+
+    .auth-buttons a {
+      background: white;
+      color: #007bff;
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      margin-left: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .auth-buttons a:hover {
+      background: #004aad;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    /* ==== PHẦN CHÀO ==== */
+    .hero {
+      text-align: center;
+      padding: 80px 10%;
+      background: linear-gradient(to bottom, #f0f7ff, #ffffff);
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: #007bff;
+    }
+
+    .hero p {
+      color: #555;
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+    }
+
+    .hero .buttons a {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #007bff;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #0056cc;
+    }
+
+    .btn-outline {
+      border: 2px solid #007bff;
+      color: #007bff;
+    }
+
+    .btn-outline:hover {
+      background: #007bff;
+      color: white;
+    }
+
+    /* ==== DANH SÁCH SÁCH NỔI BẬT ==== */
+    .book-section {
+      padding: 50px 8%;
+    }
+
+    .book-section h2 {
+      color: #111;
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+
+    .book-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .book-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .book-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .book-info {
+      padding: 15px;
+      text-align: left;
+    }
+
+    .book-info h3 {
+      font-size: 1.1rem;
+      color: #222;
+      margin-bottom: 5px;
+    }
+
+    .book-info p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .book-price {
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    footer {
+      background: #f9f9f9;
+      padding: 25px 10%;
+      text-align: center;
+      color: #555;
+      font-size: 0.9rem;
+      border-top: 1px solid #ddd;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #007bff;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">📚 <span>BookStore</span></div>
+
+    <nav>
+      <a href="../pages/home.html">Trang chủ</a>
+      <a href="../pages/products.html">Sản phẩm</a>
+      <a href="../pages/cart.html">Giỏ hàng</a>
+    </nav>
+
+    <div class="auth-buttons">
+      <a href="../pages/login.html">Đăng nhập</a>
+      <a href="../pages/register.html">Đăng ký</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Chào mừng đến với <span>BookStore</span></h1>
+    <p>Khám phá hàng ngàn đầu sách chất lượng từ các tác giả nổi tiếng.</p>
+    <div class="buttons">
+      <a href="../pages/products.html" class="btn-primary">Khám phá ngay</a>
+      <a href="../pages/login.html" class="btn-outline">Đăng nhập để mua</a>
+    </div>
+  </section>
+
+ 
+
+  <footer style="background:#f8f9fa; padding:40px 8%; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px; border-top:2px solid #e0e0e0; font-size:0.95rem;">
+    <div>
+      <h4>VỀ BOOKSTORE</h4>
+      <p><a href="about.html">Giới thiệu</a></p>
+      <p><a href="careers.html">Tuyển dụng</a></p>
+      <p><a href="policy.html">Chính sách bảo mật</a></p>
+    </div>
+    <div>
+      <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+      <p><a href="guide.html">Hướng dẫn mua hàng</a></p>
+      <p><a href="return.html">Chính sách đổi trả</a></p>
+    </div>
+    <div>
+      <h4>LIÊN HỆ & HỖ TRỢ</h4>
+      <p><a href="contact.html">Liên hệ</a></p>
+      <p><a href="feedback.html">Gửi yêu cầu hỗ trợ</a></p>
+    </div>
+    <div>
+      <h4>THÔNG TIN LIÊN HỆ</h4>
+      <p>📍 123 Đường Sách, TP.HCM</p>
+      <p>📧 cskh@bookstore.com</p>
+      <p>📞 1900 1234</p>
+      <p>🕐 8:00 - 22:00 (T2 - CN)</p>
+    </div>
+  </footer>
+
+</body>
+</html>

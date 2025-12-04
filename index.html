@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookStore | Chào mừng</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <style>
+    /* ====== TRANG CHÀO ====== */
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom right, #007bff, #66ccff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+    }
+
+    .welcome-container {
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 40px 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .welcome-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .welcome-container p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .welcome-btn {
+      display: inline-block;
+      background: white;
+      color: #007bff;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .welcome-btn:hover {
+      background: #004aad;
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-container">
+    <h1>📚 Chào mừng đến với BookStore</h1>
+    <p>Kho tàng sách chất lượng – đồng hành cùng tri thức của bạn!</p>
+    <a href="pages/home.html" class="welcome-btn">Vào trang chính</a>
+  </div>
+
+  <footer>© 2025 BookStore • Designed by Nhóm 12</footer>
+</body>
+</html>

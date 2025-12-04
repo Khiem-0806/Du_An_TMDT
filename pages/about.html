@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giới thiệu | BookStore</title>
+  <link rel="stylesheet" href="../styles/variables.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/responsive.css" />
+</head>
+
+<body>
+  <!-- ==== HEADER GIỐNG TOÀN SITE ==== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">📚 <span>BookStore</span></a>
+      <nav class="nav">
+        <a href="./home.html">Trang chủ</a>
+        <a href="./products.html">Sản phẩm</a>
+        <a href="./cart.html">Giỏ hàng</a>
+      </nav>
+      <div class="auth-actions" id="authActions"></div>
+    </div>
+  </header>
+
+  <!-- ==== BANNER ==== -->
+  <div class="top-banner">
+    🎉 Ưu đãi đặc biệt: Giảm 20% cho toàn bộ sách Business trong tuần này! 🎉
+  </div>
+
+  <!-- ==== PHẦN GIỚI THIỆU ==== -->
+  <section class="section">
+    <div class="container">
+      <h1 class="page-title" style="color:#007bff;">Giới thiệu về BookStore</h1>
+      <p style="font-style:italic; color:#555;">Hơn 10 năm đồng hành cùng độc giả Việt Nam</p>
+
+      <div style="margin-top:40px;">
+        <h2>Về chúng tôi</h2>
+        <p>BookStore được thành lập với sứ mệnh mang tri thức đến với mọi người. Chúng tôi tin rằng sách là người bạn đồng hành tuyệt vời nhất trong cuộc sống.</p>
+
+        <h2 style="margin-top:30px;">Tầm nhìn</h2>
+        <p>Trở thành nhà sách trực tuyến hàng đầu Việt Nam, nơi độc giả có thể tìm thấy những cuốn sách phù hợp với nhu cầu và sở thích của mình.</p>
+
+        <h2 style="margin-top:30px;">Giá trị cốt lõi</h2>
+        <ul style="list-style:none; line-height:1.8; padding-left:0;">
+          <li>📘 Chất lượng sách và dịch vụ tốt nhất</li>
+          <li>💰 Giá cả hợp lý, cạnh tranh</li>
+          <li>🚚 Giao hàng nhanh chóng, tiện lợi</li>
+          <li>💬 Đội ngũ hỗ trợ chuyên nghiệp</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== FOOTER GIỐNG GỐC ==== -->
+  <footer style="background:#f8f9fa; padding:40px 8%; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px; border-top:2px solid #e0e0e0; font-size:0.95rem;">
+    <div>
+      <h4>VỀ BOOKSTORE</h4>
+      <p><a href="about.html">Giới thiệu</a></p>
+      <p><a href="careers.html">Tuyển dụng</a></p>
+      <p><a href="policy.html">Chính sách bảo mật</a></p>
+    </div>
+
+    <div>
+      <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+      <p><a href="guide.html">Hướng dẫn mua hàng</a></p>
+      <p><a href="return.html">Chính sách đổi trả</a></p>
+    </div>
+
+    <div>
+      <h4>LIÊN HỆ & HỖ TRỢ</h4>
+      <p><a href="contact.html">Liên hệ</a></p>
+      <p><a href="feedback.html">Gửi yêu cầu hỗ trợ</a></p>
+    </div>
+
+    <div>
+      <h4>THÔNG TIN LIÊN HỆ</h4>
+      <p>📍 123 Đường Sách, TP.HCM</p>
+      <p>📧 cskh@bookstore.com</p>
+      <p>📞 1900 1234</p>
+      <p>🕐 8:00 - 22:00 (T2 - CN)</p>
+    </div>
+  </footer>
+
+  <script src="../js/api.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/app.js"></script>
+  <script>
+    Auth.requireAuth();
+    App.mountHeader();
+  </script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tuyển dụng | BookStore</title>
+  <link rel="stylesheet" href="../styles/variables.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/responsive.css" />
+  <style>
+    /* Popup form */
+    .apply-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+    .apply-box {
+      background: #fff;
+      width: 90%;
+      max-width: 450px;
+      border-radius: 10px;
+      padding: 25px 30px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      text-align: left;
+      animation: pop 0.3s ease;
+    }
+    @keyframes pop { from {transform:scale(0.9); opacity:0;} to {transform:scale(1); opacity:1;} }
+    .apply-box h2 {
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+    .apply-box input, .apply-box textarea, .apply-box select {
+      width: 100%;
+      margin-bottom: 12px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+    .apply-box button {
+      width: 100%;
+      background: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+    .apply-box button:hover { background: #0056b3; }
+    .close-btn {
+      background: #dc3545;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      float: right;
+    }
+
+    /* Toast notification */
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #28a745;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">📚 <span>BookStore</span></a>
+      <nav class="nav">
+        <a href="./home.html">Trang chủ</a>
+        <a href="./products.html">Sản phẩm</a>
+        <a href="./cart.html">Giỏ hàng</a>
+      </nav>
+      <div class="auth-actions" id="authActions"></div>
+    </div>
+  </header>
+
+  <div class="top-banner">🚀 Cùng BookStore xây dựng cộng đồng yêu sách Việt Nam!</div>
+
+  <!-- MAIN -->
+  <section class="section">
+    <div class="container">
+      <h1 class="page-title" style="color:#007bff;">Tuyển Dụng</h1>
+      <p style="color:#555;">Cùng chúng tôi phát triển văn hóa đọc và chia sẻ tri thức!</p>
+
+      <div style="display:flex; flex-direction:column; gap:25px; margin-top:35px;">
+        <!-- Job 1 -->
+        <div style="background:#f8f9fa; padding:25px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+          <h3 style="color:#d63384;">Chuyên viên Tư vấn Khách hàng</h3>
+          <p><strong>Mô tả:</strong> Tư vấn và hỗ trợ khách hàng trong việc lựa chọn sách phù hợp.</p>
+          <p><strong>Yêu cầu:</strong> Đam mê sách, kỹ năng giao tiếp tốt, tác phong chuyên nghiệp.</p>
+          <button class="apply-btn" data-position="Chuyên viên Tư vấn Khách hàng" style="margin-top:10px; background:#d63384; color:#fff; border:none; padding:10px 20px; border-radius:6px; cursor:pointer;">Ứng tuyển ngay</button>
+        </div>
+
+        <!-- Job 2 -->
+        <div style="background:#f8f9fa; padding:25px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+          <h3 style="color:#0d6efd;">Nhân viên Kinh doanh Online</h3>
+          <p><strong>Mô tả:</strong> Quản lý và phát triển kênh bán hàng trực tuyến.</p>
+          <p><strong>Yêu cầu:</strong> Có kinh nghiệm thương mại điện tử, hiểu biết thị trường sách.</p>
+          <button class="apply-btn" data-position="Nhân viên Kinh doanh Online" style="margin-top:10px; background:#0d6efd; color:#fff; border:none; padding:10px 20px; border-radius:6px; cursor:pointer;">Ứng tuyển ngay</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLY POPUP -->
+  <div class="apply-overlay" id="applyOverlay">
+    <div class="apply-box">
+      <button class="close-btn" id="closeApply">Đóng</button>
+      <h2>Ứng tuyển tại BookStore</h2>
+      <form id="applyForm">
+        <input type="text" id="name" placeholder="Họ và tên" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="position" placeholder="Vị trí ứng tuyển" readonly />
+        <input type="text" id="experience" placeholder="Kinh nghiệm (nếu có)" />
+        <input type="file" id="cvFile" accept=".pdf,.doc,.docx" />
+        <textarea id="note" placeholder="Ghi chú thêm..." rows="3"></textarea>
+        <button type="submit">Gửi hồ sơ</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer style="background:#f8f9fa; padding:40px 8%; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px; border-top:2px solid #e0e0e0; font-size:0.95rem;">
+    <div>
+      <h4>VỀ BOOKSTORE</h4>
+      <p><a href="about.html">Giới thiệu</a></p>
+      <p><a href="careers.html">Tuyển dụng</a></p>
+      <p><a href="policy.html">Chính sách bảo mật</a></p>
+    </div>
+    <div>
+      <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+      <p><a href="guide.html">Hướng dẫn mua hàng</a></p>
+      <p><a href="return.html">Chính sách đổi trả</a></p>
+    </div>
+    <div>
+      <h4>LIÊN HỆ & HỖ TRỢ</h4>
+      <p><a href="contact.html">Liên hệ</a></p>
+      <p><a href="support.html">Gửi yêu cầu hỗ trợ</a></p>
+    </div>
+    <div>
+      <h4>THÔNG TIN LIÊN HỆ</h4>
+      <p>📍 123 Đường Sách, TP.HCM</p>
+      <p>📧 cskh@bookstore.com</p>
+      <p>📞 1900 1234</p>
+      <p>🕐 8:00 - 22:00 (T2 - CN)</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="../js/auth.js"></script>
+  <script src="../js/app.js"></script>
+  <script>
+    Auth.requireAuth();
+    App.mountHeader();
+
+    const overlay = document.getElementById('applyOverlay');
+    const positionInput = document.getElementById('position');
+    const applyBtns = document.querySelectorAll('.apply-btn');
+    const closeBtn = document.getElementById('closeApply');
+    const form = document.getElementById('applyForm');
+
+    applyBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        overlay.style.display = 'flex';
+        positionInput.value = btn.dataset.position;
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      overlay.style.display = 'none';
+      form.reset();
+    });
+
+    // Toast version (thay alert)
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      const toast = document.createElement('div');
+      toast.className = 'toast';
+      toast.textContent = '🎉 Cảm ơn bạn đã ứng tuyển tại BookStore! Chúng tôi sẽ liên hệ sớm nhất.';
+      document.body.appendChild(toast);
+
+      setTimeout(() => toast.style.opacity = '1', 100); // fade in
+      overlay.style.display = 'none';
+      form.reset();
+
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 500);
+      }, 3000);
+    });
+  </script>
+</body>
+</html>

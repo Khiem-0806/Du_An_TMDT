@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hướng dẫn mua hàng | BookStore</title>
+  <link rel="stylesheet" href="../styles/variables.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/responsive.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">📚 <span>BookStore</span></a>
+      <nav class="nav">
+        <a href="./home.html">Trang chủ</a>
+        <a href="./products.html">Sản phẩm</a>
+        <a href="./cart.html">Giỏ hàng</a>
+      </nav>
+      <div class="auth-actions" id="authActions"></div>
+    </div>
+  </header>
+
+  <div class="top-banner">📦 4 bước đơn giản để sở hữu cuốn sách yêu thích!</div>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="page-title" style="color:#007bff;">Hướng dẫn mua hàng</h1>
+      <p style="color:#555;">Làm theo 4 bước đơn giản sau để mua hàng nhanh chóng tại BookStore:</p>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:25px; margin-top:30px;">
+        <div style="background:#f8f9fa; padding:20px; border-radius:10px; text-align:center;">
+          <h2>1️⃣</h2>
+          <h3>Tìm kiếm sách</h3>
+          <p>Duyệt hoặc gõ tên sách/tác giả vào thanh tìm kiếm.</p>
+        </div>
+
+        <div style="background:#f8f9fa; padding:20px; border-radius:10px; text-align:center;">
+          <h2>2️⃣</h2>
+          <h3>Thêm vào giỏ hàng</h3>
+          <p>Nhấn “Thêm vào giỏ” cho những cuốn sách bạn muốn mua.</p>
+        </div>
+
+        <div style="background:#f8f9fa; padding:20px; border-radius:10px; text-align:center;">
+          <h2>3️⃣</h2>
+          <h3>Thanh toán</h3>
+          <p>Kiểm tra giỏ hàng và tiến hành thanh toán an toàn.</p>
+        </div>
+
+        <div style="background:#f8f9fa; padding:20px; border-radius:10px; text-align:center;">
+          <h2>4️⃣</h2>
+          <h3>Nhận hàng</h3>
+          <p>Đơn hàng sẽ được giao tận nơi theo địa chỉ bạn đăng ký.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#f8f9fa; padding:40px 8%; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px; border-top:2px solid #e0e0e0; font-size:0.95rem;">
+    <div>
+      <h4>VỀ BOOKSTORE</h4>
+      <p><a href="about.html">Giới thiệu</a></p>
+      <p><a href="careers.html">Tuyển dụng</a></p>
+      <p><a href="policy.html">Chính sách bảo mật</a></p>
+    </div>
+    <div>
+      <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+      <p><a href="guide.html">Hướng dẫn mua hàng</a></p>
+      <p><a href="return.html">Chính sách đổi trả</a></p>
+    </div>
+    <div>
+      <h4>LIÊN HỆ & HỖ TRỢ</h4>
+      <p><a href="contact.html">Liên hệ</a></p>
+      <p><a href="feedback.html">Gửi yêu cầu hỗ trợ</a></p>
+    </div>
+    <div>
+      <h4>THÔNG TIN LIÊN HỆ</h4>
+      <p>📍 123 Đường Sách, TP.HCM</p>
+      <p>📧 cskh@bookstore.com</p>
+      <p>📞 1900 1234</p>
+      <p>🕐 8:00 - 22:00 (T2 - CN)</p>
+    </div>
+  </footer>
+
+  <script src="../js/auth.js"></script>
+  <script src="../js/app.js"></script>
+  <script>Auth.requireAuth(); App.mountHeader();</script>
+</body>
+</html>
