@@ -1,141 +1,114 @@
-📚 BOOKSTORE – DỰ ÁN THƯƠNG MẠI ĐIỆN TỬ
+BookStore – Dự án Thương mại điện tử
 
-Giới thiệu
-BookStore là một website thương mại điện tử được phát triển bằng HTML, CSS và JavaScript thuần.
-Trang web cho phép người dùng duyệt và tìm kiếm các đầu sách yêu thích, thêm sản phẩm vào giỏ hàng, thanh toán qua mã QR động, đăng nhập - đăng ký tài khoản, gửi phản hồi và liên hệ trực tiếp với cửa hàng.
+BookStore là website bán sách trực tuyến được xây dựng với mục tiêu mang đến cho người đọc Việt Nam một nền tảng tiện lợi, hiện đại và dễ sử dụng.
+Dự án được phát triển trong khuôn khổ môn học Thương mại điện tử, với đầy đủ các chức năng từ đăng ký, đăng nhập, giỏ hàng, thanh toán, đến quản lý sản phẩm và phản hồi người dùng.
 
-Tính năng chính
+1. Giới thiệu
 
-Duyệt và tìm kiếm sách theo thể loại hoặc tên tác giả
+BookStore cho phép người dùng:
 
-Thêm sản phẩm vào giỏ hàng và hiển thị tổng tiền tự động
+Duyệt và tìm kiếm các đầu sách theo thể loại.
 
-Thanh toán qua mã QR động, hiển thị đúng số tiền phải trả
+Xem thông tin chi tiết từng sản phẩm.
 
-Đăng ký và đăng nhập tài khoản cá nhân
+Thêm vào giỏ hàng, cập nhật số lượng, và thanh toán bằng mã QR.
 
-Gửi phản hồi, liên hệ hoặc ứng tuyển trực tiếp trên web
+Đăng ký và đăng nhập tài khoản cá nhân.
 
-Hiển thị thông tin tuyển dụng, chính sách, hướng dẫn mua hàng và hỗ trợ khách hàng
+Gửi phản hồi, yêu cầu hỗ trợ và ứng tuyển trực tuyến.
 
+Xem các trang thông tin như chính sách bảo mật, đổi trả, hướng dẫn mua hàng, v.v.
 
-📁 Cấu trúc thư mục dự án
+2. Công nghệ sử dụng
 
-1. Thư mục js (chứa các tệp JavaScript):
+HTML5 / CSS3 / JavaScript: Xây dựng giao diện và xử lý logic phía client.
 
-api.js → Xử lý dữ liệu sản phẩm
+VietQR API: Tạo mã QR thanh toán tự động với số tiền tương ứng.
 
-app.js → Logic chính của website
+LocalStorage: Lưu trữ thông tin đăng nhập và giỏ hàng cục bộ.
 
-auth.js → Quản lý đăng nhập, đăng ký
+Responsive Design: Tối ưu hiển thị trên mọi thiết bị (PC, tablet, mobile).
 
-cart.js → Xử lý giỏ hàng và mã QR thanh toán
+Visual Studio Code: Công cụ phát triển và kiểm thử dự án.
 
-2. Thư mục pages (chứa các trang con):
+3. Cấu trúc dự án
 
-about.html → Giới thiệu BookStore
+Thư mục dự án gồm các phần chính sau:
 
-careers.html → Tuyển dụng và form ứng tuyển
+js/: Chứa các tệp xử lý logic JavaScript.
 
-cart.html → Giỏ hàng và thanh toán QR
+api.js: Xử lý dữ liệu sản phẩm.
 
-contact.html → Liên hệ trực tiếp
+app.js: Điều khiển luồng hoạt động của website.
 
-feedback.html → Gửi phản hồi người dùng
+auth.js: Xử lý đăng nhập, đăng ký và xác thực người dùng.
 
-guide.html → Hướng dẫn mua hàng
+cart.js: Quản lý giỏ hàng và tạo mã QR thanh toán.
 
-home.html → Trang chủ
+pages/: Chứa các trang con của website.
 
-login.html → Đăng nhập
+about.html: Giới thiệu về BookStore.
 
-policy.html → Chính sách bảo mật
+careers.html: Trang tuyển dụng và form ứng tuyển.
 
-products.html → Danh sách tất cả sản phẩm
+cart.html: Giỏ hàng và thanh toán.
 
-register.html → Đăng ký tài khoản
+contact.html: Trang liên hệ trực tiếp.
 
-return.html → Chính sách đổi trả
+feedback.html: Gửi phản hồi khách hàng.
 
-support.html → Gửi yêu cầu hỗ trợ
+guide.html: Hướng dẫn mua hàng.
 
-3. Thư mục styles (chứa các tệp CSS):
+home.html: Trang chủ.
 
-main.css → Giao diện tổng thể
+login.html: Đăng nhập tài khoản.
 
-responsive.css → Tùy chỉnh cho thiết bị di động
+policy.html: Chính sách bảo mật.
 
-variables.css → Biến màu sắc và font chữ
+products.html: Danh sách tất cả sản phẩm.
 
-4. Các tệp chính trong dự án:
+register.html: Đăng ký tài khoản mới.
 
-index.html → Trang khởi đầu của website
+return.html: Chính sách đổi trả.
 
-README.md → Thông tin mô tả dự án
+support.html: Trang gửi yêu cầu hỗ trợ.
 
+styles/: Chứa các tệp định dạng CSS.
 
-Cách chạy dự án
-Cách 1: Mở trực tiếp
+main.css: Giao diện chính của website.
 
-Tải dự án về máy
+responsive.css: Giao diện cho thiết bị di động.
 
-Mở file index.html bằng trình duyệt bất kỳ (Chrome, Edge, Firefox, …)
+variables.css: Biến màu sắc, font và thiết kế tổng thể.
 
-Cách 2: Dùng Live Server trong Visual Studio Code
+index.html: Trang khởi đầu của website.
 
-Cài extension “Live Server”
+README.md: Tệp mô tả tổng quan dự án.
 
-Mở thư mục DuAnTMDT bằng VS Code
+4. Cách chạy dự án
 
-Chuột phải vào file index.html → chọn “Open with Live Server”
+Mở thư mục dự án bằng Visual Studio Code.
 
-Trình duyệt sẽ tự mở địa chỉ (thường là http://127.0.0.1:5500
-)
+Cài đặt tiện ích mở rộng Live Server (nếu chưa có).
 
-Công nghệ sử dụng
+Nhấn chuột phải vào file index.html và chọn “Open with Live Server”.
 
-HTML5, CSS3, JavaScript thuần
+Website sẽ tự động mở trên trình duyệt tại địa chỉ:
+http://127.0.0.1:5500/DuAnTMDT/index.html
 
-Flexbox và CSS Grid Layout
+Bạn có thể đăng ký, đăng nhập và thử mua hàng, giỏ hàng, thanh toán QR, gửi phản hồi, hoặc ứng tuyển.
 
-LocalStorage API để lưu dữ liệu người dùng
+5. Tác giả & thông tin liên hệ
 
-QR Generator API để tạo mã thanh toán
+Tên: Trần Nguyễn Gia Khiêm
 
-Responsive design cho cả desktop và mobile
+Email: khiemcute8605@gmail.com
 
-Tính năng nổi bật
-
-Giao diện hiện đại, dễ sử dụng
-
-Mã QR thanh toán tự động theo tổng tiền
-
-Lưu giỏ hàng cục bộ (không cần đăng nhập)
-
-Form liên hệ, phản hồi, ứng tuyển có thông báo popup
-
-Header và Footer đồng nhất giữa các trang
-
-Hiển thị thông báo đăng nhập, đăng ký, thanh toán mượt mà
-
-
-Email: cskh@bookstore.com
+Địa điểm: TP. Hồ Chí Minh, Việt Nam
 
 GitHub: https://github.com/Khiem-0806
 
-Hotline: 1900 1234
-Địa chỉ: Việt Nam
+6. Ghi chú
 
-Giấy phép
-Dự án được xây dựng phục vụ học tập và thực hành lập trình web.
-Cho phép chia sẻ và chỉnh sửa với mục đích phi thương mại.
-
-Định hướng phát triển
-
-Kết nối cơ sở dữ liệu thực tế (MySQL hoặc Firebase)
-
-Tích hợp API thanh toán thật (MoMo, VNPay, ZaloPay)
-
-Xây dựng trang quản trị Admin Dashboard
-
-Gửi email tự động khi người dùng đăng ký hoặc mua hàng
+Dự án mang tính học tập và demo, không sử dụng cho mục đích thương mại.
+Mọi hình ảnh và nội dung trong website được dùng với mục đích minh họa cho bài học Thương mại điện tử.
