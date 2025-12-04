@@ -23,7 +23,6 @@ Người dùng có thể:
 | Công nghệ | Mục đích |
 |------------|-----------|
 | **HTML5, CSS3, JavaScript (ES6)** | Xây dựng giao diện và xử lý logic chính |
-| **VietQR API** | Tạo mã QR thanh toán tự động theo số tiền |
 | **LocalStorage** | Lưu trữ thông tin người dùng và giỏ hàng |
 | **Responsive Design** | Tối ưu hiển thị trên mọi thiết bị |
 | **Visual Studio Code** | Công cụ phát triển chính |
