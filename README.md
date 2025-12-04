@@ -38,55 +38,55 @@ Chứa toàn bộ mã nguồn và các tệp của dự án BookStore.
 
 📜 Thư mục js/ – Xử lý logic JavaScript
 
-api.js: Quản lý dữ liệu sản phẩm và danh mục.
+- api.js: Quản lý dữ liệu sản phẩm và danh mục.
 
-app.js: Điều khiển luồng hoạt động chính của website.
+- app.js: Điều khiển luồng hoạt động chính của website.
 
-auth.js: Quản lý đăng nhập, đăng ký và xác thực người dùng.
+- auth.js: Quản lý đăng nhập, đăng ký và xác thực người dùng.
 
-cart.js: Xử lý giỏ hàng, tính tổng tiền và tạo mã QR thanh toán.
+- cart.js: Xử lý giỏ hàng, tính tổng tiền và tạo mã QR thanh toán.
 
 🧾 Thư mục pages/ – Các trang con của website
 
-about.html: Trang giới thiệu về BookStore.
+- about.html: Trang giới thiệu về BookStore.
 
-careers.html: Trang tuyển dụng và form ứng tuyển trực tuyến.
+- careers.html: Trang tuyển dụng và form ứng tuyển trực tuyến.
 
-cart.html: Trang giỏ hàng và thanh toán.
+- cart.html: Trang giỏ hàng và thanh toán.
 
-contact.html: Trang liên hệ trực tiếp.
+- contact.html: Trang liên hệ trực tiếp.
 
-feedback.html: Trang gửi phản hồi người dùng.
+- feedback.html: Trang gửi phản hồi người dùng.
 
-guide.html: Trang hướng dẫn mua hàng.
+- guide.html: Trang hướng dẫn mua hàng.
 
-home.html: Trang chủ của website.
+- home.html: Trang chủ của website.
 
-login.html: Trang đăng nhập tài khoản.
+- login.html: Trang đăng nhập tài khoản.
 
-policy.html: Chính sách bảo mật thông tin.
+- policy.html: Chính sách bảo mật thông tin.
 
-products.html: Danh sách tất cả sản phẩm.
+- products.html: Danh sách tất cả sản phẩm.
 
-register.html: Trang đăng ký tài khoản mới.
+- register.html: Trang đăng ký tài khoản mới.
 
-return.html: Chính sách đổi trả hàng hóa.
+- return.html: Chính sách đổi trả hàng hóa.
 
-support.html: Gửi yêu cầu hỗ trợ khách hàng.
+- support.html: Gửi yêu cầu hỗ trợ khách hàng.
 
 🎨 Thư mục styles/ – Giao diện và định dạng CSS
 
-main.css: Giao diện tổng thể của toàn bộ website.
+- main.css: Giao diện tổng thể của toàn bộ website.
 
-responsive.css: Giao diện tối ưu trên điện thoại và tablet.
+- responsive.css: Giao diện tối ưu trên điện thoại và tablet.
 
-variables.css: Chứa các biến màu sắc, font chữ và kích thước dùng chung.
+- variables.css: Chứa các biến màu sắc, font chữ và kích thước dùng chung.
 
 🏠 Các tệp khác
 
-index.html: Trang khởi đầu (trang chính của website).
+- index.html: Trang khởi đầu (trang chính của website).
 
-README.md: Tệp mô tả chi tiết dự án (thông tin, hướng dẫn, cấu trúc, tác giả).
+- README.md: Tệp mô tả chi tiết dự án (thông tin, hướng dẫn, cấu trúc, tác giả).
 
 ---
 
