@@ -36,7 +36,7 @@ Người dùng có thể:
 DuAnTMDT/
 Chứa toàn bộ mã nguồn và các tệp của dự án BookStore.
 
-📜 Thư mục js/ – Xử lý logic JavaScript
+**📜 Thư mục js/ – Xử lý logic JavaScript
 
 - api.js: Quản lý dữ liệu sản phẩm và danh mục.
 
@@ -46,7 +46,7 @@ Chứa toàn bộ mã nguồn và các tệp của dự án BookStore.
 
 - cart.js: Xử lý giỏ hàng, tính tổng tiền và tạo mã QR thanh toán.
 
-🧾 Thư mục pages/ – Các trang con của website
+**🧾 Thư mục pages/ – Các trang con của website
 
 - about.html: Trang giới thiệu về BookStore.
 
@@ -74,7 +74,7 @@ Chứa toàn bộ mã nguồn và các tệp của dự án BookStore.
 
 - support.html: Gửi yêu cầu hỗ trợ khách hàng.
 
-🎨 Thư mục styles/ – Giao diện và định dạng CSS
+**🎨 Thư mục styles/ – Giao diện và định dạng CSS
 
 - main.css: Giao diện tổng thể của toàn bộ website.
 
@@ -82,7 +82,7 @@ Chứa toàn bộ mã nguồn và các tệp của dự án BookStore.
 
 - variables.css: Chứa các biến màu sắc, font chữ và kích thước dùng chung.
 
-🏠 Các tệp khác
+**🏠 Các tệp khác
 
 - index.html: Trang khởi đầu (trang chính của website).
 
