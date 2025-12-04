@@ -18,35 +18,37 @@ Gửi phản hồi, liên hệ hoặc ứng tuyển trực tiếp trên web
 
 Hiển thị thông tin tuyển dụng, chính sách, hướng dẫn mua hàng và hỗ trợ khách hàng
 
-Các trang chính trong website
 
-index.html – Trang chào mừng, giới thiệu
-
-home.html – Trang chủ
-
-products.html – Danh sách và tìm kiếm sách
-
-cart.html – Giỏ hàng và thanh toán QR
-
-login.html / register.html – Đăng nhập và đăng ký
-
-about.html – Giới thiệu về BookStore
-
-careers.html – Trang tuyển dụng và form ứng tuyển
-
-policy.html – Chính sách bảo mật
-
-return.html – Chính sách đổi trả
-
-guide.html – Hướng dẫn mua hàng
-
-support.html – Gửi yêu cầu hỗ trợ
-
-contact.html – Trang liên hệ
-
-feedback.html – Gửi phản hồi khách hàng
-
-
+DuAnTMDT/
+│
+├── js/
+│   ├── api.js               → Xử lý dữ liệu sản phẩm
+│   ├── app.js               → Logic chính của website
+│   ├── auth.js              → Quản lý đăng nhập, đăng ký
+│   └── cart.js              → Xử lý giỏ hàng và mã QR thanh toán
+│
+├── pages/
+│   ├── about.html           → Giới thiệu BookStore
+│   ├── careers.html         → Tuyển dụng và form ứng tuyển
+│   ├── cart.html            → Giỏ hàng và thanh toán QR
+│   ├── contact.html         → Liên hệ trực tiếp
+│   ├── feedback.html        → Gửi phản hồi người dùng
+│   ├── guide.html           → Hướng dẫn mua hàng
+│   ├── home.html            → Trang chủ
+│   ├── login.html           → Đăng nhập
+│   ├── policy.html          → Chính sách bảo mật
+│   ├── products.html        → Danh sách tất cả sản phẩm
+│   ├── register.html        → Đăng ký tài khoản
+│   ├── return.html          → Chính sách đổi trả
+│   └── support.html         → Gửi yêu cầu hỗ trợ
+│
+├── styles/
+│   ├── main.css             → Giao diện tổng thể
+│   ├── responsive.css       → Tùy chỉnh cho mobile
+│   └── variables.css        → Biến màu sắc và font
+│
+├── index.html               → Trang khởi đầu của website
+└── README.md                → Thông tin mô tả dự án
 
 Cách chạy dự án
 Cách 1: Mở trực tiếp
