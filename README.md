@@ -46,38 +46,7 @@ contact.html – Trang liên hệ
 
 feedback.html – Gửi phản hồi khách hàng
 
-Cấu trúc thư mục
 
-DuAnTMDT/
-│
-├── js/
-│ ├── api.js – Xử lý dữ liệu và danh sách sản phẩm
-│ ├── app.js – Điều khiển logic chính của website
-│ ├── auth.js – Quản lý đăng nhập, đăng ký
-│ └── cart.js – Xử lý giỏ hàng và mã QR thanh toán
-│
-├── pages/
-│ ├── about.html
-│ ├── careers.html
-│ ├── cart.html
-│ ├── contact.html
-│ ├── feedback.html
-│ ├── guide.html
-│ ├── home.html
-│ ├── login.html
-│ ├── policy.html
-│ ├── products.html
-│ ├── register.html
-│ ├── return.html
-│ └── support.html
-│
-├── styles/
-│ ├── main.css
-│ ├── responsive.css
-│ └── variables.css
-│
-├── index.html
-└── README.md
 
 Cách chạy dự án
 Cách 1: Mở trực tiếp
