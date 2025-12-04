@@ -19,36 +19,59 @@ Gửi phản hồi, liên hệ hoặc ứng tuyển trực tiếp trên web
 Hiển thị thông tin tuyển dụng, chính sách, hướng dẫn mua hàng và hỗ trợ khách hàng
 
 
-DuAnTMDT/
-│
-├── js/
-│   ├── api.js               → Xử lý dữ liệu sản phẩm
-│   ├── app.js               → Logic chính của website
-│   ├── auth.js              → Quản lý đăng nhập, đăng ký
-│   └── cart.js              → Xử lý giỏ hàng và mã QR thanh toán
-│
-├── pages/
-│   ├── about.html           → Giới thiệu BookStore
-│   ├── careers.html         → Tuyển dụng và form ứng tuyển
-│   ├── cart.html            → Giỏ hàng và thanh toán QR
-│   ├── contact.html         → Liên hệ trực tiếp
-│   ├── feedback.html        → Gửi phản hồi người dùng
-│   ├── guide.html           → Hướng dẫn mua hàng
-│   ├── home.html            → Trang chủ
-│   ├── login.html           → Đăng nhập
-│   ├── policy.html          → Chính sách bảo mật
-│   ├── products.html        → Danh sách tất cả sản phẩm
-│   ├── register.html        → Đăng ký tài khoản
-│   ├── return.html          → Chính sách đổi trả
-│   └── support.html         → Gửi yêu cầu hỗ trợ
-│
-├── styles/
-│   ├── main.css             → Giao diện tổng thể
-│   ├── responsive.css       → Tùy chỉnh cho mobile
-│   └── variables.css        → Biến màu sắc và font
-│
-├── index.html               → Trang khởi đầu của website
-└── README.md                → Thông tin mô tả dự án
+📁 Cấu trúc thư mục dự án
+
+1. Thư mục js (chứa các tệp JavaScript):
+
+api.js → Xử lý dữ liệu sản phẩm
+
+app.js → Logic chính của website
+
+auth.js → Quản lý đăng nhập, đăng ký
+
+cart.js → Xử lý giỏ hàng và mã QR thanh toán
+
+2. Thư mục pages (chứa các trang con):
+
+about.html → Giới thiệu BookStore
+
+careers.html → Tuyển dụng và form ứng tuyển
+
+cart.html → Giỏ hàng và thanh toán QR
+
+contact.html → Liên hệ trực tiếp
+
+feedback.html → Gửi phản hồi người dùng
+
+guide.html → Hướng dẫn mua hàng
+
+home.html → Trang chủ
+
+login.html → Đăng nhập
+
+policy.html → Chính sách bảo mật
+
+products.html → Danh sách tất cả sản phẩm
+
+register.html → Đăng ký tài khoản
+
+return.html → Chính sách đổi trả
+
+support.html → Gửi yêu cầu hỗ trợ
+
+3. Thư mục styles (chứa các tệp CSS):
+
+main.css → Giao diện tổng thể
+
+responsive.css → Tùy chỉnh cho thiết bị di động
+
+variables.css → Biến màu sắc và font chữ
+
+4. Các tệp chính trong dự án:
+
+index.html → Trang khởi đầu của website
+
+README.md → Thông tin mô tả dự án
 
 
 Cách chạy dự án
